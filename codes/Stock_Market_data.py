@@ -50,7 +50,7 @@ from  codes.Companies import constituent_data,ApiDetails,Company_data,stock_time
 #     #     link = self.daily_data_link(companySymbol=companySymbol,full_data=full_data)
 #     #
 #
-
+#dfdfddfdfd
 
 
 def bulk_data_download():
