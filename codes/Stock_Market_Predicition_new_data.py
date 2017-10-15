@@ -12,7 +12,7 @@ from dateutil.relativedelta import relativedelta
 import numpy as np
 import math
 import datetime
-import statsmodels.api as sm
+# import statsmodels.api as sm
 from rpy2.robjects.packages import importr
 from rpy2.rinterface import RRuntimeError
 from rpy2.rinterface import NARealType
@@ -21,8 +21,8 @@ from rpy2.robjects import pandas2ri
 import numpy as np
 import scipy as sp
 from sklearn import linear_model
-from yahoo_finance import Share
-import pandas_datareader as web
+# from yahoo_finance import Share
+# import pandas_datareader as web
 from pandas.tseries.offsets import BDay
 from matplotlib.dates import DateFormatter, WeekdayLocator,    DayLocator, MONDAY
 from matplotlib.finance import candlestick_ohlc
@@ -275,13 +275,13 @@ r_forecast_obj = importr("DemandForecasting")
 
 
 ###############################################################################################
-raw_data_json = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/raw_data/json'
-output_folder = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/output_data'
-log_folder    = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/codes/logs'
+raw_data_json = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/raw_data/json'
+output_folder = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/output_data'
+log_folder    = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/codes/logs'
 a = constituent_data()
-company_data = a.get_topK_dict(k=500)
+company_data = a.get_topK_dict(k=10) # k= number of companies forecast
 keys = company_data['Name'].keys()
-Forecasting_horizon = 6
+Forecasting_horizon = 18
 
 
 LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"

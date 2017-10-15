@@ -1,11 +1,11 @@
 # API KEY : UGJN261OWZA9KCVJ
 
-import urllib.request
+# import urllib.request
 import urllib3
 import json
 import datetime,pytz
 
-from  codes.Companies import constituent_data,ApiDetails,Company_data,stock_time_zone
+from  Companies import constituent_data,ApiDetails,Company_data,stock_time_zone
 
 
 # Thank you for the code
@@ -58,7 +58,7 @@ def bulk_data_download():
     #############################################
     a = constituent_data()
     api_obj = ApiDetails()
-
+# k = number of companies data to be pulled
     company_data = a.get_topK_dict(k=500)
 
     keys = company_data['Name'].keys()
@@ -66,7 +66,7 @@ def bulk_data_download():
     http = urllib3.PoolManager()
     today_date = datetime.datetime.today().strftime("%m%d%Y")
 
-    raw_data = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/raw_data/json'
+    raw_data = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/raw_data/json'
     ############################################
 
     for key in keys:

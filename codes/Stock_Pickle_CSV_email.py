@@ -8,18 +8,18 @@ import numpy as np
 
 
 
-raw_data_json     = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/raw_data/json'
-output_folder     = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/output_data'
-output_csv_folder = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/output_data/csv_10092017'
+raw_data_json     = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/raw_data/json'
+output_folder     = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/output_data'
+output_csv_folder = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/output_data/csv_10092017'
 
-log_folder        = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/codes/logs'
+log_folder        = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/codes/logs'
 
 ####################################################
 
 
 
 a = constituent_data()
-company_details = a.get_topK_dict(k=500)
+company_details = a.get_topK_dict(k=10)
 keys = company_details['Name'].keys()
 #####################################
 local_start_time  = datetime.datetime.strptime("20160101","%Y%m%d")

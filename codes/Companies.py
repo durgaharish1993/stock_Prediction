@@ -1,5 +1,5 @@
 import pandas as pd
-import urllib.request
+# import urllib.request
 import urllib3
 import json
 import datetime,pytz
@@ -10,7 +10,7 @@ import datetime,pytz
 class constituent_data:
     def __init__(self):
         self.description = 'This class provides the top S&P Company details.'
-        raw_data_folder = "/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/raw_data/"
+        raw_data_folder = "/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/raw_data/"
         #output_folder = "/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/output_data/"
         file_name = "constituents.csv"
         self.company_names = pd.read_csv(raw_data_folder + file_name)

@@ -80,7 +80,7 @@ if __name__ == '__main__':
     a = constituent_data()
     company_details = a.get_topK_dict(k=10)
     keys = company_details['Name'].keys()
-    output_csv_folder = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/output_data/csv_10092017'
+    output_csv_folder = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/output_data/csv_10092017'
     file_list = []
     count =1
     message_text = ''
