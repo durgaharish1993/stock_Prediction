@@ -8,7 +8,7 @@ import datetime,pytz
 from  codes.Companies import constituent_data,ApiDetails,Company_data,stock_time_zone
 
 
-
+# Thank you for the code
 
 #
 # class ApiDetails():
