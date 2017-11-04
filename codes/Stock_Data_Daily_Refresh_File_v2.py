@@ -11,7 +11,7 @@ from collections import defaultdict
 
 
 # Raw_data details for
-raw_data_json = '/Users/dimbul/Desktop/temp_desktop/private/stock_Prediction/raw_data/json'
+raw_data_json = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/raw_data/json'
 
 
 
@@ -36,7 +36,7 @@ zone_today_str  = zone_end_time.strftime('%m%d%Y')
 api_d    = ApiDetails()
 s_p_data = constituent_data()
 get_data = fetch_data()
-company_details = s_p_data.get_topK_dict(k=500)
+company_details = s_p_data.get_topK_dict(k=10)
 
 #These are the compaany names.
 keys = company_details['Name'].keys()

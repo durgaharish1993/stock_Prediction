@@ -59,7 +59,7 @@ def bulk_data_download():
     a = constituent_data()
     api_obj = ApiDetails()
 # k = number of companies data to be pulled
-    company_data = a.get_topK_dict(k=500)
+    company_data = a.get_topK_dict(k=10)
 
     keys = company_data['Name'].keys()
 

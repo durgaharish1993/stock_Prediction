@@ -10,7 +10,7 @@ import numpy as np
 
 raw_data_json     = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/raw_data/json'
 output_folder     = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/output_data'
-output_csv_folder = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/output_data/csv_10092017'
+output_csv_folder = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/output_data/csv'
 
 log_folder        = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/codes/logs'
 

@@ -26,6 +26,7 @@ COMMASPACE = ', '
 
 def main(attachments,message_text):
     sender = 'durgaharish1993@gmail.com'
+#    sender = 'wvktaraknath@gmail.com'
     gmail_password = 'npfybmwpzmskhptg'
     recipients = ['durgaharish1992@gmail.com', 'wvktaraknath@gmail.com']
 
@@ -80,7 +81,7 @@ if __name__ == '__main__':
     a = constituent_data()
     company_details = a.get_topK_dict(k=10)
     keys = company_details['Name'].keys()
-    output_csv_folder = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/output_data/csv_10092017'
+    output_csv_folder = '/Users/taraknathwoddi/Documents/Anicca/Share_Price_Predictions/stock_Prediction/output_data/csv'
     file_list = []
     count =1
     message_text = ''
